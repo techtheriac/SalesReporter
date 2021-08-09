@@ -8,7 +8,7 @@ namespace SalesReporter.Models
     public class OrderDetail
     {
         [Key]
-        public int OrderDetailId { get; set; }
+        public string OrderDetailId { get; set; }
         public decimal Price { get; set; }
         public Product Product { get; set; }
         public Order Order { get; set; }

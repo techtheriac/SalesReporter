@@ -8,7 +8,7 @@ namespace SalesReporter.Models
     public class Supplier
     {
         [Key]
-        public int SupplierId { get; set; }
+        public string SupplierId { get; set; }
         public string CompanyName { get; set; }
         public string City { get; set; }
         public string State { get; set; }

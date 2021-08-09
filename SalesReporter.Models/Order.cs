@@ -8,7 +8,7 @@ namespace SalesReporter.Models
     public class Order
     {
         [Key]
-        public int OrderId { get; set; }
+        public string OrderId { get; set; }
         public string OrderNumber { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime? OrderFulfilled { get; set; }

@@ -8,7 +8,7 @@ namespace SalesReporter.Models
     public class Shipper
     {
         [Key]
-        public int ShipperId { get; set; }
+        public string ShipperId { get; set; }
         public string CompanyName { get; set; }
         public string Phone { get; set; }
         public ICollection<Order> Order { get; set; }
