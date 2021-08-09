@@ -1,0 +1,37 @@
+[
+  {
+    "CategoryId": "176a4c62-fb1b-4d77-9698-f1d80c116039",
+    "CategoryName": "Groceries",
+    "Description": "Food items and provision"
+  },
+  {
+    "CategoryId": "9702377d-512a-432a-8608-4a1281e42292",
+    "CategoryName": "Fashion",
+    "Description": "Custom wears and apparels"
+  },
+  {
+    "CategoryId": "5d804063-10cc-4cf8-b2b2-d93fc98f8f59",
+    "CategoryName": "Health and Beauty",
+    "Description": "Rejuvenate your essence"
+  },
+  {
+    "CategoryId": "de260896-b1f5-4d62-81ae-930689c9dc35",
+    "CategoryName": "Home and Office",
+    "Description": "Small and large appliances and gadgets"
+  },
+  {
+    "CategoryId": "2a44dd92-e06d-4ffa-bbf2-62577ea0e1b7",
+    "CategoryName": "Baby Products",
+    "Description": "Apparel and freshly baked diapers"
+  },
+  {
+    "CategoryId": "69644191-a282-4679-8b00-d4446cfe24a8",
+    "CategoryName": "Sporting goods",
+    "Description": "Pump up the fitness vibe"
+  },
+  {
+    "CategoryId": "8516c789-d0c4-40d7-ba97-7fe73b4e01d8",
+    "CategoryName": "Gaming",
+    "Description": "All things playstation and vibes"
+  }
+]
