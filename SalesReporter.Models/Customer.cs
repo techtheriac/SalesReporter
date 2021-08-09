@@ -8,7 +8,7 @@ namespace SalesReporter.Models
     public class Customer
     {
         [Key]
-        public int CustomerId { get; set; }
+        public string CustomerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Street { get; set; }

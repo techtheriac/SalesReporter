@@ -19,7 +19,7 @@ namespace SalesReporter.DataLayer
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Data Source=LAPTOP-0VSJ0RU3;Initial Catalog=SalesReporter;Integrated Security=True;Pooling=False");
+                "Data Source=LAPTOP-0VSJ0RU3;Initial Catalog=SalesReport;Integrated Security=True;Pooling=False");
         }
 
     }
