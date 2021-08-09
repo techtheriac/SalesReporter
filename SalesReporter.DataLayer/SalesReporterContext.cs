@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using SalesReporter.Models;
 
 namespace SalesReporter.DataLayer
@@ -20,6 +22,14 @@ namespace SalesReporter.DataLayer
         {
             optionsBuilder.UseSqlServer(
                 "Data Source=LAPTOP-0VSJ0RU3;Initial Catalog=SalesReport;Integrated Security=True;Pooling=False");
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            var data = File.ReadAllText(
+                @"C:\Users\hp\source\repos\SalesReporter\SalesReporter.DataLayer\JsonFiles\Customers.json");
+            var listOfCustomers = JsonConvert.DeserializeObject<List<Customer>>(data);
+            builder.Entity<Customer>().HasData(listOfCustomers);
         }
 
     }
