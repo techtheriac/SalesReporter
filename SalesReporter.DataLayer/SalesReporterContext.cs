@@ -27,9 +27,9 @@ namespace SalesReporter.DataLayer
         protected override void OnModelCreating(ModelBuilder builder)
         {
             var data = File.ReadAllText(
-                @"C:\Users\hp\source\repos\SalesReporter\SalesReporter.DataLayer\JsonFiles\Categories.json");
-            var listOfCategories = JsonConvert.DeserializeObject<List<Category>>(data);
-            builder.Entity<Category>().HasData(listOfCategories);
+                @"C:\Users\hp\source\repos\SalesReporter\SalesReporter.DataLayer\JsonFiles\Suppliers.json");
+            var listOfSuppliers = JsonConvert.DeserializeObject<List<Supplier>>(data);
+            builder.Entity<Supplier>().HasData(listOfSuppliers);
         }
 
     }
