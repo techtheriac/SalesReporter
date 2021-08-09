@@ -1,0 +1,182 @@
+[
+  {
+    "CustomerId": "2452ca0b-13a8-499e-b7cd-82ef0cb0d3bc",
+    "FirstName": "Bethany",
+    "LastName": "Schroeder",
+    "Street": "Riverdale Avenue",
+    "City": "Enlow",
+    "ZipCode": 35857,
+    "Phone": "(844) 539-3422"
+  },
+  {
+    "CustomerId": "b49c2428-d020-46e9-90be-e9725c772b4e",
+    "FirstName": "Adele",
+    "LastName": "Moss",
+    "Street": "Coffey Street",
+    "City": "Belfair",
+    "ZipCode": 35856,
+    "Phone": "(988) 428-2435"
+  },
+  {
+    "CustomerId": "d5d78f36-290c-4d5b-bec2-77a836cc4e6e",
+    "FirstName": "Powell",
+    "LastName": "Stone",
+    "Street": "Plaza Street",
+    "City": "Dahlen",
+    "ZipCode": 35850,
+    "Phone": "(856) 430-2295"
+  },
+  {
+    "CustomerId": "22786b90-4554-4fd5-ac5a-a4aa3edb9c55",
+    "FirstName": "Lilia",
+    "LastName": "Parsons",
+    "Street": "Vandalia Avenue",
+    "City": "Lopezo",
+    "ZipCode": 95856,
+    "Phone": "(983) 547-2639"
+  },
+  {
+    "CustomerId": "3529d5c3-13be-4903-b0d4-0d468a0941e3",
+    "FirstName": "Reilly",
+    "LastName": "Cunningham",
+    "Street": "Oakland Place",
+    "City": "Steinhatchee",
+    "ZipCode": 33886,
+    "Phone": "(882) 437-3366"
+  },
+  {
+    "CustomerId": "d72abb87-aa6e-476c-a77f-ac4023df752b",
+    "FirstName": "Tamara",
+    "LastName": "Holman",
+    "Street": "Florence Avenue",
+    "City": "Wattsville",
+    "ZipCode": 33856,
+    "Phone": "(985) 554-3493"
+  },
+  {
+    "CustomerId": "a0214e01-d7dd-47d5-8832-e7608dd954dd",
+    "FirstName": "Edna",
+    "LastName": "May",
+    "Street": "Harbor Court",
+    "City": "Caron",
+    "ZipCode": 35898,
+    "Phone": "(993) 493-3490"
+  },
+  {
+    "CustomerId": "f2a88666-d226-4316-9d31-e879dd334e3c",
+    "FirstName": "Heidi",
+    "LastName": "Rivers",
+    "Street": "Verona Street",
+    "City": "Motley",
+    "ZipCode": 35856,
+    "Phone": "(865) 475-3915"
+  },
+  {
+    "CustomerId": "74082c2b-b50e-4d37-8b6d-ffa63e8d26ae",
+    "FirstName": "Christine",
+    "LastName": "Cameron",
+    "Street": "Ivan Court",
+    "City": "Abrams",
+    "ZipCode": 34856,
+    "Phone": "(928) 422-3334"
+  },
+  {
+    "CustomerId": "e351da94-ee13-4540-9299-7fcf95205ae0",
+    "FirstName": "Rodriguez",
+    "LastName": "Battle",
+    "Street": "River Street",
+    "City": "Fontanelle",
+    "ZipCode": 35855,
+    "Phone": "(857) 554-3947"
+  },
+  {
+    "CustomerId": "d379f1b4-e090-4e94-ba0a-b26873bf2060",
+    "FirstName": "Jodie",
+    "LastName": "Villarreal",
+    "Street": "Love Lane",
+    "City": "Orason",
+    "ZipCode": 35756,
+    "Phone": "(877) 596-4000"
+  },
+  {
+    "CustomerId": "7256e251-bf53-4914-a8d4-1d588457d391",
+    "FirstName": "Susana",
+    "LastName": "Walters",
+    "Street": "Miami Court",
+    "City": "Dargan",
+    "ZipCode": 35856,
+    "Phone": "(950) 562-2546"
+  },
+  {
+    "CustomerId": "b0e89d76-96df-4986-8949-6218f3c99625",
+    "FirstName": "Nadine",
+    "LastName": "Snider",
+    "Street": "Legion Street",
+    "City": "Roland",
+    "ZipCode": 35890,
+    "Phone": "(921) 584-2672"
+  },
+  {
+    "CustomerId": "743d4ca5-f460-41ce-9169-73910dce6672",
+    "FirstName": "Corine",
+    "LastName": "Rodriquez",
+    "Street": "Dwight Street",
+    "City": "Duryea",
+    "ZipCode": 35859,
+    "Phone": "(894) 536-3453"
+  },
+  {
+    "CustomerId": "49ac076a-6f3b-4ed8-9512-fd5f4cb53b43",
+    "FirstName": "Clark",
+    "LastName": "Benton",
+    "Street": "Williams Court",
+    "City": "Rodman",
+    "ZipCode": 35896,
+    "Phone": "(896) 475-3153"
+  },
+  {
+    "CustomerId": "1698c7a5-03c5-4f03-adcd-34dffe2771bd",
+    "FirstName": "Shirley",
+    "LastName": "Murray",
+    "Street": "Gem Street",
+    "City": "Rose",
+    "ZipCode": 35847,
+    "Phone": "(855) 493-2038"
+  },
+  {
+    "CustomerId": "49671ecf-cfe5-4493-8206-3b0464eb4781",
+    "FirstName": "Gwendolyn",
+    "LastName": "Parks",
+    "Street": "Dakota Place",
+    "City": "Nash",
+    "ZipCode": 35856,
+    "Phone": "(973) 540-3779"
+  },
+  {
+    "CustomerId": "0f3bb335-5bac-4037-807c-b0c53833ebf2",
+    "FirstName": "Jocelyn",
+    "LastName": "Wilder",
+    "Street": "Albemarle Road",
+    "City": "Unionville",
+    "ZipCode": 35857,
+    "Phone": "(814) 592-2250"
+  },
+  {
+    "CustomerId": "7c85e6e8-a378-4fa8-ac1f-80435c75da9e",
+    "FirstName": "Noreen",
+    "LastName": "Dejesus",
+    "Street": "Thames Street",
+    "City": "Williamson",
+    "ZipCode": 35866,
+    "Phone": "(966) 471-2919"
+  },
+  {
+    "CustomerId": "f2e88107-4530-4ae3-93a7-08f3214e6475",
+    "FirstName": "Blackwell",
+    "LastName": "Maynard",
+    "Street": "Metrotech Courtr",
+    "City": "Camino",
+    "ZipCode": 35756,
+    "Phone": "(805) 503-2117"
+  }
+]

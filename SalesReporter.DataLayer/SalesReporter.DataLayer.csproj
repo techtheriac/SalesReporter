@@ -21,9 +21,5 @@
     <ProjectReference Include="..\SalesReporter.Models\SalesReporter.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="JsonFiles\" />
-  </ItemGroup>
-
 
 </Project>
