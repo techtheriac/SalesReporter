@@ -2,37 +2,34 @@
 using SalesReporter.Core;
 using SalesReporter.Models;
 using SalesReporter.DataLayer;
-using Autofac;
 using System.Reflection;
-using Autofac.Core;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace SalesReporter
 {
-    class Program
+    class Program : IDesignTimeDbContextFactory<SalesReporterContext>
     {
+        private const string ConnectionString =
+            "Data Source=LAPTOP-0VSJ0RU3;Initial Catalog=SalesReport;Integrated Security=True;Pooling=False";
         static void Main(string[] args)
         {
-            var container = BuildContainer();
 
-            using (var scope = container.BeginLifetimeScope())
-            {
-                scope.Resolve<Application>().Run();
-            }
+        }
+
+        static void ConfigureServices()
+        {
+            var services = new ServiceCollection();
+            services.AddDbContext<SalesReporterContext>(options => options.UseSqlServer(ConnectionString));
         }
 
 
-        private static IContainer BuildContainer()
+        public SalesReporterContext CreateDbContext(string[] args)
         {
-            //Registering individual Dependencies
-            var builder = new ContainerBuilder();
-            builder.RegisterType<Application>();
-            builder.RegisterType<SalesReporterContext>();
-
-            builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
-                .AsSelf()
-                .AsImplementedInterfaces(); 
-
-            return builder.Build();
+            var optionsBuilder = new DbContextOptionsBuilder<SalesReporterContext>();
+            optionsBuilder.UseSqlServer(ConnectionString);
+            return new SalesReporterContext(optionsBuilder.Options);
         }
     }
 }
