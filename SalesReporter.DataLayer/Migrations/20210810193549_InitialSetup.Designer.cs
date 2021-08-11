@@ -10,8 +10,8 @@ using SalesReporter.DataLayer;
 namespace SalesReporter.DataLayer.Migrations
 {
     [DbContext(typeof(SalesReporterContext))]
-    [Migration("20210810191428_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210810193549_InitialSetup")]
+    partial class InitialSetup
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

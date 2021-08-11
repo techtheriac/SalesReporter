@@ -1,0 +1,72 @@
+[
+  {
+    "OrderDetailId": "7b5c765f-a996-4c7d-9936-26afc5e96f0d",
+    "Price": 223125.64,
+    "ProductId": "0d4f1332-4058-460e-94e3-0ade45619ccc",
+    "OrderId": "0c314286-f273-418f-80e1-0381f453d30c",
+    "Quantity": 2
+  },
+  {
+    "OrderDetailId": "27b0bf62-65b8-4617-9ba2-43e60dc8e493",
+    "Price": 99000.00,
+    "ProductId": "ebe8bfd4-1b9f-4d9a-8b6b-2e4f53c6c409",
+    "OrderId": "173705d1-9d25-44f9-8839-ed29a6804f1b",
+    "Quantity": 2
+  },
+  {
+    "OrderDetailId": "71d070c3-7e1e-4eb1-9ad5-64d395678069",
+    "Price": 98980.90,
+    "ProductId": "fa6457b1-78f5-43c1-bb8f-fd1e3fc7b799",
+    "OrderId": "26b3c2fd-3924-450a-856f-08e86e22c1cc",
+    "Quantity": 4
+  },
+  {
+    "OrderDetailId": "5ac4db0c-4918-47d5-b781-0cfdea9d539e",
+    "Price": 908887.09,
+    "ProductId": "fa6457b1-78f5-43c1-bb8f-fd1e3fc7b799",
+    "OrderId": "3f362174-0556-4fbd-a1dc-1fb886dbd2da",
+    "Quantity": 3
+  },
+  {
+    "OrderDetailId": "ec90abab-6c22-4a1f-8f58-aad65d10abf0",
+    "Price": 23890000.00,
+    "ProductId": "925afd76-c58e-470f-9dc8-e29947a33524",
+    "OrderId": "6e8027f1-4e13-44aa-8044-f5fcd1fe59df",
+    "Quantity": 6
+  },
+  {
+    "OrderDetailId": "9136e7fc-1750-44d0-88f5-b8d2f7a2aeb0",
+    "Price": 789987890.90,
+    "ProductId": "925afd76-c58e-470f-9dc8-e29947a33524",
+    "OrderId": "85eb0bfa-ca07-494a-8333-4e82407bedc8",
+    "Quantity": 1
+  },
+  {
+    "OrderDetailId": "cf2ed1a8-3165-4a14-8b5d-76f9db0e65ab",
+    "Price": 87889.99,
+    "ProductId": "9694b2d1-3d54-4fbc-968e-02c0bc67020a",
+    "OrderId": "896ddcc6-e7d6-4d1c-a7ba-fecca07d698f",
+    "Quantity": 5
+  },
+  {
+    "OrderDetailId": "a82f2b2a-789c-445f-940e-bcb63355c9f9",
+    "Price": 897978.90,
+    "ProductId": "9694b2d1-3d54-4fbc-968e-02c0bc67020a",
+    "OrderId": "90dd7d2f-0add-41e0-b821-cc8b592b7d8b",
+    "Quantity": 2
+  },
+  {
+    "OrderDetailId": "2d6dad20-272f-4e15-a8b2-d357d99d519f",
+    "Price": 1000100.00,
+    "ProductId": "79c91a16-c0f5-482f-adb6-f7d03bbe8c46",
+    "OrderId": "952d2e50-a331-4405-b84c-84aa8fab0c58",
+    "Quantity": 1
+  },
+  {
+    "OrderDetailId": "169be5f1-7044-45ad-93e4-1ef50ded7b47",
+    "Price": 750000.00,
+    "ProductId": "79c91a16-c0f5-482f-adb6-f7d03bbe8c46",
+    "OrderId": "a13606a0-0c78-4cc5-8305-592329a41919",
+    "Quantity": 2
+  }
+]
