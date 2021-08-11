@@ -27,7 +27,7 @@ namespace SalesReporter.Core.Implementations
                    input == "help";
         }
 
-        private List<string> Manual = new List<string>
+        private readonly List<string> _manual = new List<string>
         {
             "* Enter 'help' to print this menu",
             "* Enter 'top' to view customers from 5 locations whose orders is greater than 50,000",
@@ -49,7 +49,6 @@ namespace SalesReporter.Core.Implementations
 
             var priceIsGreaterThanFiftyThousand = 
                 result.Where(p => p.PriceOfProduct > 50000.00M)
-                    .OrderBy(p => p.CityOfCustomer)
                     .Take(5);
 
 
@@ -123,7 +122,7 @@ namespace SalesReporter.Core.Implementations
 
         public void PrintManual()
         {
-            foreach (var item in Manual)
+            foreach (var item in _manual)
             {
                 Console.WriteLine(item);
             }
