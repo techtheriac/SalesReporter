@@ -21,9 +21,10 @@ namespace SalesReporter.Core.Implementations
         private bool IsValidInput(string input)
         {
             return input == "sales" ||
-                   input == "cd" ||
+                   input == "exit" ||
                    input == "top" ||
                    input == "gbc" ||
+                   input == "deals" ||
                    input == "help";
         }
 
@@ -32,7 +33,8 @@ namespace SalesReporter.Core.Implementations
             "* Enter 'help' to print this menu",
             "* Enter 'top' to view customers from 5 locations whose orders is greater than 50,000",
             "* Enter 'sales' to view sales report",
-            "* Enter 'gbc' to display customers grouped by city"
+            "* Enter 'gbc' to display customers grouped by city",
+            "* Enter 'deals' to display top 5 deals"
         };
         public void GetTopCustomers()
         {
@@ -117,7 +119,16 @@ namespace SalesReporter.Core.Implementations
 
         public void GetTopDeals()
         {
-            throw new NotImplementedException();
+            var results = _context.Products.OrderByDescending(p => p.Discount).Take(5);
+
+            var table = new ConsoleTable("Product Name", "Price", "Discount");
+
+            foreach (var item in results)
+            {
+                table.AddRow(item.ProductName, item.Price, $"-{item.Discount}% off");
+            }
+
+            table.Write();
         }
 
         public void PrintManual()
@@ -168,6 +179,9 @@ namespace SalesReporter.Core.Implementations
                     break;
                 case "gbc":
                     GetCustomersByCity();
+                    break;
+                case "deals":
+                    GetTopDeals();
                     break;
                 default:
                     Run(count, int.MaxValue);
