@@ -28,7 +28,8 @@ namespace SalesReporter
 
             //Entry Point
             GenerateReports application = new GenerateReports(context);
-            application.GetSalesReports();
+            application.Init();
+            application.Run(0, int.MaxValue);
 
         }
 

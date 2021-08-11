@@ -17,6 +17,22 @@ namespace SalesReporter.Core.Implementations
         {
             _context = context;
         }
+
+        private bool IsValidInput(string input)
+        {
+            return input == "sales" ||
+                   input == "cd" ||
+                   input == "top" ||
+                   input == "gbc" ||
+                   input == "help";
+        }
+
+        private List<string> Manual = new List<string>
+        {
+            "* Enter 'help' to print this menu",
+            "* Enter 'top' to view customers from 5 locations whose orders is greater than 50,000",
+            "* Enter 'sales' to view sales report"
+        };
         public void GetTopCustomers()
         {
             var result = (from p in _context.Orders
@@ -95,10 +111,58 @@ namespace SalesReporter.Core.Implementations
             throw new NotImplementedException();
         }
 
+        public void PrintManual()
+        {
+            foreach (var item in Manual)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+
+        public void Init()
+        {
+            Console.WriteLine("Welcome to TopGun SalesReporter");
+            PrintManual();
+        }
 
         // Entry Point
-        public void Run()
+        public void Run(int count, int max)
         {
+            string subsequentPrompt = count >= 1 ? "What else would you like to do?" : "";
+            Console.WriteLine(subsequentPrompt);
+
+            Console.Write(">> ");
+            string _action = Console.ReadLine().ToLower();
+
+            if (count >= max || _action == "exit")
+            {
+                return;
+            }
+
+            if (IsValidInput(_action) == false)
+            {
+                Console.WriteLine("You have made an invalid selection");
+                Run(count, int.MaxValue);
+            }
+
+            switch (_action)
+            {
+                case "sales":
+                    GetSalesReports();
+                    break;
+                case "top":
+                    GetTopCustomers();
+                    break;
+                case "help":
+                    PrintManual();
+                    break;
+                default:
+                    Run(count, int.MaxValue);
+                    break;
+            }
+
+            Run(count + 1, int.MaxValue);
 
         }
     }
