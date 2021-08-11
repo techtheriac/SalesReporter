@@ -31,7 +31,8 @@ namespace SalesReporter.Core.Implementations
         {
             "* Enter 'help' to print this menu",
             "* Enter 'top' to view customers from 5 locations whose orders is greater than 50,000",
-            "* Enter 'sales' to view sales report"
+            "* Enter 'sales' to view sales report",
+            "* Enter 'gbc' to display customers grouped by city"
         };
         public void GetTopCustomers()
         {
@@ -103,7 +104,16 @@ namespace SalesReporter.Core.Implementations
 
         public void GetCustomersByCity()
         {
-            throw new NotImplementedException();
+            var results = _context.Customers.OrderBy(p => p.City);
+
+            var table = new ConsoleTable("City", "CustomerName");
+
+            foreach (var customer in results)
+            {
+                table.AddRow(customer.City, $"{customer.FirstName} {customer.LastName}");
+            }
+
+            table.Write();
         }
 
         public void GetTopDeals()
@@ -156,6 +166,9 @@ namespace SalesReporter.Core.Implementations
                     break;
                 case "help":
                     PrintManual();
+                    break;
+                case "gbc":
+                    GetCustomersByCity();
                     break;
                 default:
                     Run(count, int.MaxValue);
